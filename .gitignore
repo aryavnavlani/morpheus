@@ -1,0 +1,30 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+
+# Node.js dependencies
+node_modules/
+
+# Environment / secret files
+.env
+.env.*
+!.env.example
+
+# Credentials / private keys
+*.pem
+*.key
+credentials.json
+service-account.json
+firebase-adminsdk*.json
+
+# Generated files
+*.log
+
+# Local exports / data
+*.xlsx
+*.csv

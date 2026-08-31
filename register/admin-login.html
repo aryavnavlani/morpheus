@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MORPHEUS VIII | Admin Login</title>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <div class="login-card">
+
+        <img
+            src="../assets/logo-white.png"
+            class="login-logo"
+            alt="Morpheus logo"
+        >
+
+        <h1>
+            MORPHEUS
+            <span>VIII</span>
+        </h1>
+
+        <p class="subtitle">
+            Admin Portal
+        </p>
+
+        <form id="adminLoginForm">
+
+            <input
+                 type="text"
+                 id="adminUsername"
+                 placeholder="Admin Username"
+                 autocomplete="username"
+                 required
+                >
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Password"
+                autocomplete="current-password"
+                required
+            >
+
+            <button
+                type="submit"
+                class="primary-btn"
+                id="adminLoginBtn"
+            >
+                Login
+            </button>
+
+        </form>
+
+        <p
+            id="adminLoginError"
+            class="login-error"
+        ></p>
+
+        <a
+            href="login.html"
+            class="admin-link"
+        >
+            ← School Login
+        </a>
+
+    </div>
+
+</div>
+
+<script
+    type="module"
+    src="js/admin.js"
+></script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MORPHEUS VIII | Admin Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+<div class="admin-dashboard-page">
+
+    <header class="admin-dashboard-header">
+
+        <div>
+
+            <h1>
+                Admin Dashboard
+            </h1>
+
+            <p id="adminName">
+                Loading administrator...
+            </p>
+
+        </div>
+
+        <div class="admin-header-actions">
+
+    <button
+        type="button"
+        id="exportRegistrationsBtn"
+        class="admin-btn admin-btn-primary"
+    >
+        Export Spreadsheet
+    </button>
+
+    <button
+        type="button"
+        id="adminLogoutBtn"
+        class="admin-btn admin-btn-danger"
+    >
+        Logout
+    </button>
+
+</div>
+    </header>
+
+
+    <main class="admin-dashboard-main">
+
+        <section class="admin-summary">
+
+            
+
+            <div class="admin-stat-card">
+
+                <span id="totalSchools">
+                    0
+                </span>
+
+                <p>
+                    Schools
+                </p>
+
+            </div>
+
+            <div class="admin-stat-card">
+
+                <span id="totalRegistrations">
+                    0
+                </span>
+
+                <p>
+                    Event Registrations
+                </p>
+
+            </div>
+
+            <div class="admin-stat-card">
+
+                <span id="totalParticipants">
+                    0
+                </span>
+
+                <p>
+                    Participants
+                </p>
+
+            </div>
+
+            <div class="admin-stat-card registration-status-card">
+
+    <span id="registrationStatusText">
+        Loading...
+    </span>
+
+    <p>
+        Registration Status
+    </p>
+
+    <button
+    type="button"
+    id="toggleRegistrationsBtn"
+    class="admin-btn admin-btn-primary"
+    disabled
+>
+    Loading...
+</button>
+
+</div>
+
+        </section>
+
+
+        <section class="admin-content-layout">
+
+            <aside class="admin-schools-panel">
+
+                <div class="admin-panel-heading">
+
+                    <h2>
+                        Schools
+                    </h2>
+
+                    <button
+    type="button"
+    id="refreshAdminData"
+    class="admin-btn admin-btn-secondary"
+>
+    Refresh
+</button>
+                </div>
+
+                <input
+                    type="search"
+                    id="schoolSearch"
+                    placeholder="Search schools..."
+                    autocomplete="off"
+                >
+
+                <div
+                    id="schoolsList"
+                    class="admin-schools-list"
+                >
+
+                    <p class="admin-loading">
+                        Loading schools...
+                    </p>
+
+                </div>
+
+            </aside>
+
+
+            <section class="admin-registration-panel">
+
+                <div id="schoolRegistrationView">
+
+                    <div class="admin-empty-state">
+
+                        <h2>
+                            Select a school
+                        </h2>
+
+                        <p>
+                            Choose a school to view its registered events and participants.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+
+
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+
+<script
+    type="module"
+    src="js/admin.js"
+></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MORPHEUS 2026 | Events</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<canvas
+    id="bgCanvas"
+    class="bg-canvas"
+></canvas>
+
+
+<header class="site-header">
+
+    <a
+        href="index.html#home"
+        class="nav-logo-wrap"
+    >
+
+        <img
+            src="assets/logo-white.png"
+            alt="MORPHEUS"
+            class="nav-logo"
+        >
+
+    </a>
+
+    <button
+        class="menu-toggle"
+        type="button"
+    >
+        ☰
+    </button>
+
+    <nav class="main-nav">
+
+        <a href="index.html#home">
+            Home
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+        <a
+            href="events.html"
+            class="active"
+        >
+            Events
+        </a>
+
+        <a href="index.html#team">
+            Team
+        </a>
+
+        <a href="index.html#sponsors">
+            Sponsors
+        </a>
+
+        <a href="register/login.html">
+            Register
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="events-page">
+
+    <section class="events-page-hero">
+
+        <p class="events-page-kicker">
+            MORPHEUS VIII
+        </p>
+
+        <h1>
+            Explore Events
+        </h1>
+
+        <p>
+            Browse the complete event catalogue, filter by category,
+            and open any event for its details, rules and judging criteria.
+        </p>
+
+    </section>
+
+
+    <section class="events-catalogue">
+
+        <div class="events-controls">
+
+            <div
+                id="eventCategoryFilters"
+                class="event-category-filters"
+            ></div>
+
+            <input
+                type="search"
+                id="eventSearch"
+                class="event-search-input"
+                placeholder="Search events..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <div
+            id="publicEventsGrid"
+            class="public-events-grid"
+        ></div>
+
+
+        <div
+            id="eventDetailsPanel"
+            class="event-details-panel"
+            hidden
+        ></div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <p>
+        © <span id="year"></span>
+        MORPHEUS 2026 —
+        South City International School
+    </p>
+
+</footer>
+
+
+<script src="register/data/events.js"></script>
+<script src="register/data/public-events.js"></script>
+<script src="events-page.js"></script>
+</body>
+</html>

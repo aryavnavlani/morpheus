@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MORPHEUS VIII | Student Registration Portal</title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dashboard-page">
+
+    <!-- ===========================
+         HEADER
+    ============================ -->
+
+    <header class="dashboard-header">
+
+    <button
+        id="logoutBtn"
+        class="logout-btn">
+
+        Logout
+
+    </button>
+
+    <img
+        src="../assets/logo-white.png"
+        class="dashboard-logo"
+        alt="MORPHEUS Logo">
+
+    <h1>MORPHEUS VIII</h1>
+
+    <p class="portal-subtitle">
+        Student Registration Portal
+    </p>
+
+</header>
+
+    <!-- ===========================
+         WELCOME
+    ============================ -->
+
+    <section class="welcome-section">
+
+    <h2 id="schoolName"></h2>
+
+    <p class="welcome-text">
+        Choose an event category below to begin registration.
+    </p>
+
+</section>
+
+    <!-- ===========================
+         PROGRESS
+    ============================ -->
+
+    <section class="progress-section">
+
+        <div class="registration-count-summary">
+
+    <span>Events Registered</span>
+
+    <strong id="registrationCount">
+        0
+    </strong>
+
+</div>
+    </section>
+
+    <!-- ===========================
+         CATEGORY TABS
+    ============================ -->
+
+    <nav
+        id="categoryTabs"
+        class="category-tabs">
+
+    </nav>
+
+    <!-- ===========================
+         EVENT GRID
+    ============================ -->
+
+    <main>
+
+        <div
+            id="eventGrid"
+            class="event-grid">
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="data/events.js"></script>
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+
+</html>
